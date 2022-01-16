@@ -29,6 +29,8 @@ public class Variables
 
 		//other integer types
 		char charOne = 65;
+		//below code also works. char needs to be single quote if your using the character literal. If using the ASCII value, then no quotes. 
+		//char charOne = 'A';
 
 
 		//other types
