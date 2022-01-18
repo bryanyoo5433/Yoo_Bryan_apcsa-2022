@@ -51,7 +51,7 @@ public class Variables
 		System.out.println("*                               *");
 		System.out.println("*         real types            *");
 		System.out.println("*                               *");
-		System.out.println("*32 bit - intOne = "+byteOne+"\t\t*");
+		System.out.println("*32 bit - floatOne = "+floatOne+"\t\t*");
 		System.out.println("*64 bit - doubleOne = "+shortOne+"\t*");
 		System.out.println("*                               *");
 		System.out.println("*      other integer types      *");
