@@ -17,20 +17,32 @@ public class Distance
 
 	public Distance()
 	{
+		setCoordinates(0,0,0,0);
+		distance = 0.0;
 	}
 
 	public Distance(int x1, int y1, int x2, int y2)
 	{
+		xOne = x1;
+		xTwo = x2;
+		yOne = y1;
+		yTwo = y2;
 	}
 
 	public void setCoordinates(int x1, int y1, int x2, int y2)
 	{
+		xOne = x1;
+		xTwo = x2;
+		yOne = y1;
+		yTwo = y2;
 	}
 
 	public void calcDistance()
 	{
+		distance = Math.sqrt(Math.pow(xTwo-xOne,2)+Math.pow(yTwo-yOne,2));
 	}
 	
+	//i dont understand what the code below is used for
 	public double getDistance()
 	{
 		return 0.0;
@@ -38,12 +50,13 @@ public class Distance
 	
 	public void print()
 	{
+		System.out.printf("distance == %.3f\n",distance);
 	}
 	
 	//complete print or the toString
 
 	public String toString()
 	{
-		return "";
+		return String.format("distance == %.3f", distance);
 	}
 }
